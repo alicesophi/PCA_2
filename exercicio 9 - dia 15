@@ -1,0 +1,30 @@
+//Faça um Programa que peça 2 números inteiros e um número real. Calcule e mostre: o produto do dobro do primeiro com metade do segundo. a soma do triplo do primeiro com o terceiro. o terceiro elevado ao cubo.
+
+#include <stdio.h>
+#include <math.h>
+
+int main(void){
+	int numero1, numero2;
+	float numero_real, x, y, z;
+
+    printf("Digite um numero inteiro: ");
+    scanf("%d", &numero1);
+    
+    printf("Digite outro numero inteiro: ");
+    scanf("%d", &numero2);
+    
+    printf("Digite um numero real: ");
+    scanf("%f", &numero_real);
+
+    x = numero1 * 2 * (numero2/2);
+    printf("o produto do dobro do primeiro com metade do segundo: %f", x);
+    
+    y = numero1 * 3 + numero_real;
+    printf("a soma do triplo do primeiro com o terceiro: %f", y);
+    
+	z = pow(numero_real,3);
+	printf("o terceiro elevado ao cubo: %f", z);
+    
+    return 0;
+
+}
