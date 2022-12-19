@@ -1,0 +1,17 @@
+//Faça um Programa que peça a temperatura em graus Celsius, transforme e mostre em graus Farenheit.
+
+#include <stdio.h>
+
+int main(void){
+	float temperatura_farenheit, temperatura_celsius;
+
+    printf("Temperatura em Celsius: ");
+    scanf("%f", &temperatura_celsius);
+
+    temperatura_farenheit = ((1.8 * temperatura_celsius) + 32);
+    
+	 printf("Temperatura em Farenheit: %.1f", temperatura_farenheit);
+
+    return 0;
+
+}
