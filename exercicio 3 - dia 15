@@ -1,0 +1,17 @@
+3. //Faça um Programa que converta metros para centímetros.
+
+#include <stdio.h>
+
+int main(void){
+	int metro, centimetros;
+
+	printf("Metros: ");
+	scanf("%d", &metro);
+
+	centimetros = metro * 100;
+
+	printf("O valor em centimetros eh: %.1d", centimetros);
+
+	return 0;
+
+}
